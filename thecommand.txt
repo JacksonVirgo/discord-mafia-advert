@@ -1,0 +1,11 @@
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade Pillow
+python3 -m pip install pyinstaller
+
+
+
+python -m PyInstaller --noconfirm --onefile --windowed --hidden-import="PIL" --icon "icon.png" --add-data "icon.png:." --name "Discord Mafia Advertising"  "index.py"
+
+OR
+
+python3 -m PyInstaller --noconfirm --onefile --windowed --hidden-import="PIL" --icon "icon.png" --add-data "icon.png:." --name "Discord Mafia Advertising"  "index.py"
